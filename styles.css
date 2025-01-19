@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+:root {
+    --cor-fundo: #1E1E1E;
+    --cor-destaque: #C778DD;
+    --cor-simples: #FFFFFF;
+    --cor-formas: #ABB2BF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Code", serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    min-height: 100vh;
+    color: var(--cor-simples);
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 10% 1% 10%;
+}
+
+.navbar_first {
+    width: 100%;
+    display: flex;
+    margin-left: 5rem;
+    gap: 5px;
+}
+
+.navbar_first h4 {
+    font-size: 16px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 20px; 
+}
+
+.navbar li {
+    font-size: 16px;
+    list-style: none;
+}
+
+.navbar li strong {
+    color: var(--cor-destaque);
+}
+
+.navbar a {
+    text-decoration: none; 
+    color: var(--cor-simples); 
+    padding: 10px 15px; 
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+}
+
+.sidebar {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: #fff;
+    font-size: 20px; /* Tamanho do ícone */
+    text-decoration: none;
+}
+
+.principal {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+.principal_apresentacao {
+    width: 40%;
+    gap: 20rem;
+}
+
+.principal_apresentacao h3 {
+    font-size: 32px;
+    margin-bottom: 2rem;
+}
+
+.principal_apresentacao p {
+    margin-bottom: 3rem;
+}
+
+.principal_apresentacao strong {
+    color: var(--cor-destaque);
+}
+
+.principal_apresentacao mark {
+    background-color: var(--cor-destaque);
+}
+
+.principal img {
+    width: 200px;
+    filter: grayscale(100%);
+}
+
+.principal_botao {
+    margin-top: 4%;
+}
+
+.principal_botao a {
+    color: var(--cor-simples);
+    border: 1px solid var(--cor-destaque);
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.tech-slider {
+    margin-top: 5rem;
+    width: 57%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
+    position: relative;
+    margin-left: auto; 
+    margin-right: auto;
+  }
+  
+  .slider-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    animation: scroll 240s linear infinite;
+  }
+  
+  .tech-icon img {
+    width: 40px;
+    height: auto;
+  }
+  
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.principal_citacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.principal_citacao p {
+    border: 1px solid var(--cor-formas);
+    padding: 20px;
+}
